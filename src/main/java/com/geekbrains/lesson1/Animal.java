@@ -20,7 +20,7 @@ public  abstract class Animal {
         if (distance <= swimRestriction && distance >= 0) {
             System.out.println(type + " " + name + " проплыл " + distance + " м");
         } else {
-            System.out.println(type + " " + name + " проплыл " + swimRestriction + " м");
+            System.out.println(type + " " + name + " проплыл " + swimRestriction + " м и не справился с заданием");
         }
     }
 
@@ -28,7 +28,7 @@ public  abstract class Animal {
         if (distance <= runRestriction && distance >= 0) {
             System.out.println(type + " " + name + " пробежал " + distance + " м");
         } else {
-            System.out.println(type + " " + name + " пробежал " + runRestriction + " м");
+            System.out.println(type + " " + name + " пробежал " + runRestriction + " м и не справился с заданием");
         }
     }
 }

@@ -10,7 +10,7 @@ public class MainApp {
 
 
         for (Animal animal : animals) {
-            animal.run(100);
+            animal.run(1000);
             animal.swim(7);
 
         }
