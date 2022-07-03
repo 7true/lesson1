@@ -1,8 +1,8 @@
 package com.geekbrains.lesson1;
 public  abstract class Animal {
     String name;
-    int swimRestriction;
-    int runRestriction;
+    private final int swimRestriction;
+    private final int runRestriction;
 
     public Animal(String name, int swimRestriction, int runRestriction) {
         this.name = name;

@@ -14,11 +14,11 @@ public class MainApp {
         animals[3] = new Tiger("Tig");
 
 
-        for (int i = 0; i < animals.length; i++) {
-            animals[i].run(100);
-            animals[i].swim(7);
+        for (Animal animal : animals) {
+            animal.run(100);
+            animal.swim(7);
 
-            switch (animals[i].getClass().getSimpleName()) {
+            switch (animal.getClass().getSimpleName()) {
                 case "Cat":
                     catCount++;
                     break;
