@@ -4,13 +4,19 @@ public  abstract class Animal {
     private final int swimRestriction;
     private final int runRestriction;
 
+    public static int getAnimalCount() {
+        return animalCount;
+    }
+
+    static int animalCount = 0;
     public Animal(String name, int swimRestriction, int runRestriction) {
         this.name = name;
         this.swimRestriction = swimRestriction;
         this.runRestriction = runRestriction;
+        animalCount++;
     }
     public void swim(int distance) {
-        if (distance <= swimRestriction) {
+        if (distance <= swimRestriction && distance >= 0) {
             System.out.println(name + " проплыл " + distance + " м");
         } else {
             System.out.println(name + " проплыл " + swimRestriction + " м");
@@ -18,7 +24,7 @@ public  abstract class Animal {
     }
 
     void run(int distance) {
-        if (distance <= runRestriction) {
+        if (distance <= runRestriction && distance >= 0) {
             System.out.println(name + " пробежал " + distance + " м");
         } else {
             System.out.println(name + " пробежал " + runRestriction + " м");
