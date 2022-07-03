@@ -3,12 +3,11 @@ public  abstract class Animal {
     String name;
     private final int swimRestriction;
     private final int runRestriction;
-
+    private static int animalCount = 0;
     public static int getAnimalCount() {
         return animalCount;
     }
 
-    static int animalCount = 0;
     public Animal(String name, int swimRestriction, int runRestriction) {
         this.name = name;
         this.swimRestriction = swimRestriction;
