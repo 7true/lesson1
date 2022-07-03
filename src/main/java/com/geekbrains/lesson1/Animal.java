@@ -3,16 +3,16 @@ public  abstract class Animal {
     String name;
     private final int swimRestriction;
     private final int runRestriction;
-    private static int animalCount = 0;
-    public static int getAnimalCount() {
-        return animalCount;
+    private static int count = 0;
+    public static int getCount() {
+        return count;
     }
 
     public Animal(String name, int swimRestriction, int runRestriction) {
         this.name = name;
         this.swimRestriction = swimRestriction;
         this.runRestriction = runRestriction;
-        animalCount++;
+        count++;
     }
     public void swim(int distance) {
         if (distance <= swimRestriction && distance >= 0) {

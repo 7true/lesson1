@@ -15,10 +15,10 @@ public class MainApp {
 
         }
 
-        System.out.println("\nTotal animals: " + Animal.getAnimalCount());
-        System.out.println("Cat count: " + Cat.getCatCount());
-        System.out.println("Dog count: " + Dog.getDogCount());
-        System.out.println("Tiger count: " + Tiger.getTigerCount());
+        System.out.println("\nTotal animals: " + Animal.getCount());
+        System.out.println("Cat count: " + Cat.getCount());
+        System.out.println("Dog count: " + Dog.getCount());
+        System.out.println("Tiger count: " + Tiger.getCount());
 
     }
 }
